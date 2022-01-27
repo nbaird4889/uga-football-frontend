@@ -6,7 +6,7 @@ import Show from "../pages/Show";
 function Main(props) {
     const [ players, setPlayers ] = useState(null);
   
-    const URL = "http://localhost:3001/players";
+    const URL = "https://uga-football-backend.herokuapp.com/players/";
   
     const getPlayers = async () => {
       const response = await fetch(URL);
