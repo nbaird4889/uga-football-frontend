@@ -1,7 +1,9 @@
 
 function Footer(props){
     return (
-        <h2>UGA FOOTBALL | 2022</h2>
+        <div className="footer">
+            <h2 className="footer-head">UGA FOOTBALL | 2022</h2>
+        </div>
     );
   } 
   
