@@ -36,8 +36,8 @@ function Index(props) {
   const loaded = () => {
     return props.players.map((player) => (
       <div key={player._id} className="player">
-        <Link to={`/players/${player._id}`}><h1>{player.name}</h1></Link>
-        <img src={player.image} alt={player.name} />
+        <h2 id="player-names">{player.name}</h2>
+        <Link to={`/players/${player._id}`}><img className="player-image" src={player.image} alt={player.name} /></Link>
       </div>
     ));
   };
@@ -49,7 +49,9 @@ function Index(props) {
   return (
     <div>
       <h2 className="index-headline">UGA LEGENDARY DAWGS</h2>
+        <div className="player-cards">
         {props.players ? loaded() : loading()}
+        </div>
       
       <h2 className="index-headline">ADD UGA LEGEND</h2>
       <section>

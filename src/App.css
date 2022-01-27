@@ -137,7 +137,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   padding: 40px 80px;
-  margin: 40px 100px;
+  margin: 40px 150px;
 }
 
 label {
@@ -150,6 +150,7 @@ input {
   font-family: "Merriweather Sans";
   padding: 10px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .add-btn {
@@ -178,6 +179,38 @@ input {
   padding: 40px;
   font-family: "Oswald";
   font-size: 40px;
+}
+
+.player-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 80px;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.player {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 30px;
+}
+
+#player-names {
+  margin-bottom: 20px;
+}
+
+.player-image {
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px var(--red);
+  transition: all .2s ease-in-out;
+}
+
+.player-image:hover { 
+  transform: scale(1.1); 
 }
 
 
