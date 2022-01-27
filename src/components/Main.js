@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import Index from "../pages/Index";
 import Show from "../pages/Show";
+import Home from "../pages/Home"
 
 function Main(props) {
     const [ players, setPlayers ] = useState(null);
@@ -33,6 +34,9 @@ function Main(props) {
       <main>
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/players">
             <Index players={players} createPlayer={createPlayer} />
           </Route>
           <Route
