@@ -122,11 +122,64 @@ hr {
   background-color: black;
   margin-top: 20px;
   color: white;
+  font-family: "Merriweather Sans";
 }
 
 .intro-btn:hover {
   background-color: var(--red);
 }
+
+/* =====INDEX PAGE===== */
+
+fieldset {
+  border: 1px solid black;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+  margin: 40px 100px;
+}
+
+label {
+  font-family: "Oswald";
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+input {
+  font-family: "Merriweather Sans";
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  width: 25%;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  margin-top: 20px;
+  color: white;
+  font-family: "Oswald";
+  font-size: 20px;
+}
+
+.add-btn:hover {
+  background-color: white;
+  color: var(--red)
+}
+
+.button-div {
+  text-align: center;
+}
+
+.index-headline {
+  text-align: center;
+  padding: 40px;
+  font-family: "Oswald";
+  font-size: 40px;
+}
+
 
 
 

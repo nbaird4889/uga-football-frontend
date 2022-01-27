@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Video(props) {
     return (
         <div className="video">
@@ -11,7 +13,9 @@ function Video(props) {
             <p className="intro-text">
                 Check out the legends of UGA Football who all paved the way.
             </p>
+            <Link to="/players">
             <button className="intro-btn">LET'S GO</button>
+            </Link>
             </div>
             
         </div>

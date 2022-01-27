@@ -47,50 +47,63 @@ function Index(props) {
   };
 
   return (
-    <section>
+    <div>
+      <h2 className="index-headline">UGA LEGENDARY DAWGS</h2>
+        {props.players ? loaded() : loading()}
+      
+      <h2 className="index-headline">ADD UGA LEGEND</h2>
+      <section>
         <form onSubmit={handleSubmit}>
+        <fieldset>
+        <label for="name">Name: </label>
         <input
             type="text"
             value={newForm.name}
             name="name"
-            placeholder="name"
+            placeholder="Kirby Smart"
             onChange={handleChange}
         />
+        <label for="years_played">Years Played: </label>
         <input
             type="text"
             value={newForm.years_played}
             name="years_played"
-            placeholder="i.e. 2012 - 2014"
+            placeholder="2012 - 2014"
             onChange={handleChange}
         />
+        <label for="position">Position: </label>
         <input
             type="text"
             value={newForm.position}
             name="position"
-            placeholder="position"
+            placeholder="Running Back"
             onChange={handleChange}
         />
+        <label for="stat_one">Stat: </label>
         <input
             type="text"
             value={newForm.stat_one}
             name="stat_one"
-            placeholder="stat"
+            placeholder="Rushing Yards: 2000"
             onChange={handleChange}
         />
+        <label for="stat_two">Stat: </label>
         <input
             type="text"
             value={newForm.stat_two}
             name="stat_two"
-            placeholder="stat"
+            placeholder="Touchdowns: 20"
             onChange={handleChange}
         />
+        <label for="stat_three">Stat: </label>
         <input
             type="text"
             value={newForm.stat_three}
             name="stat_three"
-            placeholder="stat"
+            placeholder="Receiving Yards: 4000"
             onChange={handleChange}
         />
+        <label for="image">Image: </label>
         <input
             type="text"
             value={newForm.image}
@@ -98,10 +111,13 @@ function Index(props) {
             placeholder="image URL"
             onChange={handleChange}
         />
-        <input type="submit" value="Add Player" />
+        <div className="button-div">
+        <input className="add-btn" type="submit" value="Add Player" />
+        </div>
+        </fieldset>
         </form>
-        {props.players ? loaded() : loading()}
         </section>
+        </div>
   );
 }
 
