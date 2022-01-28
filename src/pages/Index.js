@@ -57,7 +57,7 @@ function Index(props) {
       <section>
         <form onSubmit={handleSubmit}>
         <fieldset>
-        <label for="name">Name: </label>
+        <label htmlFor="name">Name: </label>
         <input
             type="text"
             value={newForm.name}
@@ -65,7 +65,7 @@ function Index(props) {
             placeholder="Kirby Smart"
             onChange={handleChange}
         />
-        <label for="years_played">Years Played: </label>
+        <label htmlFor="years_played">Years Played: </label>
         <input
             type="text"
             value={newForm.years_played}
@@ -73,7 +73,7 @@ function Index(props) {
             placeholder="2012 - 2014"
             onChange={handleChange}
         />
-        <label for="position">Position: </label>
+        <label htmlFor="position">Position: </label>
         <input
             type="text"
             value={newForm.position}
@@ -81,7 +81,7 @@ function Index(props) {
             placeholder="Running Back"
             onChange={handleChange}
         />
-        <label for="stat_one">Stat: </label>
+        <label htmlFor="stat_one">Stat: </label>
         <input
             type="text"
             value={newForm.stat_one}
@@ -89,7 +89,7 @@ function Index(props) {
             placeholder="Rushing Yards: 2000"
             onChange={handleChange}
         />
-        <label for="stat_two">Stat: </label>
+        <label htmlFor="stat_two">Stat: </label>
         <input
             type="text"
             value={newForm.stat_two}
@@ -97,7 +97,7 @@ function Index(props) {
             placeholder="Touchdowns: 20"
             onChange={handleChange}
         />
-        <label for="stat_three">Stat: </label>
+        <label htmlFor="stat_three">Stat: </label>
         <input
             type="text"
             value={newForm.stat_three}
@@ -105,7 +105,7 @@ function Index(props) {
             placeholder="Receiving Yards: 4000"
             onChange={handleChange}
         />
-        <label for="image">Image: </label>
+        <label htmlFor="image">Image: </label>
         <input
             type="text"
             value={newForm.image}
