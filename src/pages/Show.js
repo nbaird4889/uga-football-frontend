@@ -26,6 +26,9 @@ function Show(props){
 
     return (
         <div className="players-show">
+             <div class="sign">
+                <span class="fast-flicker">b</span>etween <span class="flicker">t</span>he <span class="flicker">h</span>edges
+            </div>
         {player ? loaded() : loading()}
             <div className="hedges">
             </div>
