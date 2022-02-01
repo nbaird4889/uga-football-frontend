@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react"; //useRef creates a mutable reference - refs can persist in between renders 
 import { Route, Switch } from "react-router-dom";
 import Index from "../pages/Index";
 import Show from "../pages/Show";
@@ -8,6 +8,8 @@ function Main(props) {
     const [ players, setPlayers ] = useState(null);
   
     const URL = "https://uga-football-backend.herokuapp.com/players/";
+
+    const getPlayersRef = useRef();
   
     const getPlayers = async () => {
       const response = await fetch(URL);
@@ -27,8 +29,12 @@ function Main(props) {
     // update list of people
       getPlayers();
     };
+
+    useEffect(() => {
+      getPlayersRef.current = getPlayers;
+    })
   
-    useEffect(() => getPlayers(), []);
+    useEffect(() => getPlayersRef.current(), []);
   
     return (
       <main>

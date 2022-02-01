@@ -221,6 +221,13 @@ input {
 
 /* =====SHOW===== */
 
+.hedges {
+  background-image: url("https://res.cloudinary.com/dhbumhhh1/image/upload/c_scale,h_200/v1643735670/Football/hedge-desktop-wallpaper-photography-wallpaper-tropical-flowers-e6d93bd286538fe3fa1bb6340df5031d-min_yo95mw.png");
+  background-position: center center;
+  padding: 100px;
+  background-repeat: repeat-x;
+}
+
 .player-show {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
