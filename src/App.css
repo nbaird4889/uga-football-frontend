@@ -31,6 +31,7 @@ header {
 
 h1 {
   font-size: 40px;
+  text-align: center;
 }
 
 .nav {
@@ -142,7 +143,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   padding: 30px 50px;
-  margin: 0 350px 80px 350px;
+  margin: 0 200px 80px 200px;
   border-radius: 10px;
 }
 
@@ -234,7 +235,7 @@ input {
   padding-top: 20px;
   letter-spacing: 4px;
   font-family: "Oswald";
-  font-size: 5em;
+  font-size: 4em;
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #FA1717,
     -0.2rem 0.1rem 1rem #FA1717, 0.2rem 0.1rem 1rem #FA1717,
@@ -448,6 +449,80 @@ input {
   font-size: 40px;
   padding-bottom: 20px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+  fieldset {
+    padding: 30px 30px;
+    margin: 0 50px 80px 50px;
+  }
+
+  .add-btn {
+    width: 60%;
+  }
+
+  .player-show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-info {
+    text-align: center;
+    padding: 40px 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .introduction {
+    margin-top: 60px;
+  }
+
+  .intro-headline {
+    font-size: 50px;
+  }
+  
+  .intro-subhead {
+    font-size: 36px;
+  }
+  
+  .intro-text {
+    font-size: 22px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .player-image {
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .player-image-show {
+    max-width: 400px;
+    height: 200px;
+  }
+
+  .show-image {
+    padding: 15px 40px;
+  }
+
+  .sign {
+    letter-spacing: 2px;
+    font-size: 2.8em;
+  }
+
+  .player-details {
+    font-size: 20px;
+  }
+  
+  .player-show-headline {
+    font-size: 32px;
+  }
+}
+
+  
 
 
 
